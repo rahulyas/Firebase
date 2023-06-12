@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_splash.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/splash_image_view"
+        android:layout_width="@dimen/two_hundred"
+        android:layout_height="@dimen/two_hundred"
+        android:src="@drawable/splash_image"
+        android:scaleType="centerCrop" />
+
+    <!-- Add other elements if needed -->
+
+</RelativeLayout>

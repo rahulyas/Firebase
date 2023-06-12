@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F7F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fifteen_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Data Selection Detail"
+            android:textSize="@dimen/twenty_dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_connect_without_contact_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GET IMEI NUMBER"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_dp"
+            android:layout_gravity="center|center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fifteen_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BLE Name "
+            android:textStyle="bold"
+            android:textSize="@dimen/twenty_dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/blename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Navik300"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_dp"
+            android:paddingLeft="@dimen/ten_dp"
+            android:layout_gravity="center_vertical|center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fifteen_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Manufacture Name"
+            android:textSize="@dimen/twenty_dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <Spinner
+            android:id="@+id/manufacturename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/items_manufacturer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_dp"
+            android:layout_gravity="center|center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fifteen_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Device Type"
+            android:textSize="@dimen/twenty_dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <Spinner
+            android:id="@+id/devicetype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/items_devicetype"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_dp"
+            android:layout_gravity="center|center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fifteen_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Model Name"
+            android:textSize="@dimen/twenty_dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <Spinner
+            android:id="@+id/modelname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/items_modelname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_dp"
+            android:layout_gravity="center|center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fifteen_dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Model No"
+            android:textSize="@dimen/twenty_dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <Spinner
+            android:id="@+id/modelno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/items_modelno"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifteen_dp"
+            android:layout_gravity="center|center_vertical"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATA REGISTRATION"
+        android:padding="@dimen/ten_dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/box_border"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

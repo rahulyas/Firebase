@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="@dimen/thirty_dp"
+        android:textColor="@color/purple_200"
+        android:gravity="center"
+        android:padding="@dimen/ten_dp"/>
+
+    <TextView
+        android:id="@+id/detail_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Language"
+        android:textSize="@dimen/twenty_dp"
+        android:textColor="@color/purple_200"
+        android:gravity="center"
+        android:padding="@dimen/ten_dp"/>
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="@dimen/two_hundred"
+        android:layout_height="@dimen/two_hundred"
+        android:padding="@dimen/ten_dp"
+        android:src="@drawable/ic_baseline_face_24"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fifteen_dp"
+        android:text="Description"
+        android:textSize="@dimen/fifteen_dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/twenty_dp"
+            android:layout_marginEnd="@dimen/twenty_dp"
+            android:text="Menu"
+            app:icon="@drawable/ic_baseline_menu_24"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_baseline_delete_24"
+            android:layout_above="@+id/add_fab"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/twenty_dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_baseline_update_24"
+            android:layout_above="@+id/delete"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/twenty_dp"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
